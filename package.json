@@ -1,6 +1,6 @@
 {
   "name": "squery",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Yet another jQuery \"replacement\"",
   "author": "silverwind",
   "license": "BSD-2-Clause",
@@ -12,7 +12,7 @@
     "bling.js",
     "xhr",
     "ajax",
-    "browser",
+    "browser"
   ],
   "files": [
     "squery.js",
