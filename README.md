@@ -6,7 +6,6 @@
 - `.off` support. Even without a listener.
 - `.on` and `.off` support multiple space-separated event names.
 - `$('a')` returns a `Node` when only one element is matched, otherwise a `NodeList`.
-- `$.ajax`, fully promise-based.
 
 `squery` currently weights 494 bytes gzipped.
 
@@ -31,22 +30,8 @@ $('a').forEach((el) => {
 });
 $('a').on('click focus', handler);
 $('a').off('click focus', handler);
-
-// ajax
-$.ajax('url').then(xhr => {
-  console.log(xhr.response);
-});
-$.ajax({
-  method: 'POST',
-  url: 'url',
-  responseType: 'json'
-  data: JSON.stringify({x:1});
-}.then(xhr => {
-  console.log(xhr.response);
-}).catch(handler);
 ````
 # TODO:
-- JSON support for `$.ajax`.
 - `.addClass` and `.removeClass`: Debatable because `classList` is pretty easy to use.
 
 © [silverwind](https://github.com/silverwind), distributed under BSD licence
