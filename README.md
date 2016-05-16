@@ -20,8 +20,10 @@ npm i --save squery
 // working on a single element
 $('#id').classList.add('newclass');
 $('#id').style.backgroundColor = 'red';
-$('#id').on('click focus', /* … */);
+$('#id').on('click focus', handler);
 $('#id').off('click focus');
+window.on('resize', handler);
+window.off('resize');
 
 // working on multiple elements
 $('a').forEach((el) => {
@@ -41,9 +43,7 @@ $.ajax({
   data: JSON.stringify({x:1});
 }.then(xhr => {
   console.log(xhr.response);
-}).catch(xhr => {
-  /* … */
-});
+}).catch(handler);
 ````
 # TODO:
 - JSON support for `$.ajax`.
