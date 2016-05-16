@@ -7,7 +7,7 @@
 - `.on` and `.off` support multiple space-separated event names.
 - `$('a')` returns a `Node` when only one element is matched, otherwise a `NodeList`.
 
-`squery` currently weights 360 bytes gzipped.
+`squery` currently weights 361 bytes gzipped.
 
 # Install
 ```
