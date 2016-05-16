@@ -9,6 +9,12 @@
 - `$.ajax`, fully promise-based.
 
 `squery` currently weights 494 byes gzipped.
+
+# Install
+```
+npm i --save squery
+```
+
 # Examples
 ````
 // working on a single element
