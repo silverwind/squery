@@ -46,7 +46,7 @@ $.ajax({
 });
 ````
 # TODO:
-.
+- JSON support for `$.ajax`.
 - `.addClass` and `.removeClass`: Debatable because `classList` is pretty easy to use.
 
 © [silverwind](https://github.com/silverwind), distributed under BSD licence
