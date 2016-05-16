@@ -24,8 +24,8 @@ $('#id').on('click focus', /* … */);
 $('#id').off('click focus');
 
 // working on multiple elements
-$('a').forEach(() => {
-  this.style.color = 'red';
+$('a').forEach((el) => {
+  el.style.color = 'red';
 });
 $('a').on('click focus', handler);
 $('a').off('click focus', handler);
