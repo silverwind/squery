@@ -1,0 +1,21 @@
+{
+  "name": "squery",
+  "version": "0.1.0",
+  "description": "Yet another jQuery \"replacement\"",
+  "author": "silverwind",
+  "license": "BSD-2-Clause",
+  "repository": "silverwind/squery",
+  "keywords": [
+    "jquery",
+    "replacement",
+    "bling",
+    "bling.js",
+    "xhr",
+    "ajax",
+    "browser",
+  ],
+  "files": [
+    "squery.js",
+    "squery.min.js"
+  ]
+}
