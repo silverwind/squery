@@ -16,7 +16,7 @@ npm i --save squery
 ```
 
 # Examples
-````
+````js
 // working on a single element
 $('#id').classList.add('newclass');
 $('#id').style.backgroundColor = 'red';
