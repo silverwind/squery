@@ -8,7 +8,7 @@
 - `$('a')` returns a `Node` when only one element is matched, otherwise a `NodeList`.
 - `$.ajax`, fully promise-based.
 
-`squery` currently weights 494 byes gzipped.
+`squery` currently weights 494 bytes gzipped.
 
 # Install
 ```

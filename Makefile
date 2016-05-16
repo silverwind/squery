@@ -4,6 +4,7 @@ lint:
 
 min:
 	uglifyjs squery.js -o squery.min.js --mangle --compress --screw-ie8 --unsafe --comments '/squery/' && wc -c squery.min.js
+	cat README.md | sed -E "s/([0-9]+) bytes/$$(gzip-size squery.min.js) bytes/g" > README.md
 
 publish:
 	npm publish
