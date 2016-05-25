@@ -31,7 +31,5 @@ $('a').forEach((el) => {
 $('a').on('click focus', handler);
 $('a').off('click focus', handler);
 ````
-# TODO:
-- `.addClass` and `.removeClass`: Debatable because `classList` is pretty easy to use.
 
 © [silverwind](https://github.com/silverwind), distributed under BSD licence
