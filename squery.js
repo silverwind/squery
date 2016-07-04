@@ -29,6 +29,10 @@
     });
     return this;
   };
+  Node.prototype.find = function(selector) {
+    var nodes = document.querySelectorAll(selector);
+    return nodes.length === 1 ? nodes[0] : nodes;
+  };
 
   /* NodeList.prototype */
   NodeList.prototype.__proto__ = Array.prototype; // eslint-disable-line

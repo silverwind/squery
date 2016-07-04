@@ -21,6 +21,7 @@ $('#id').classList.add('newclass');
 $('#id').style.backgroundColor = 'red';
 $('#id').on('click focus', handler);
 $('#id').off('click focus');
+$('#id').find('div').on(handler);
 window.on('resize', handler);
 window.off('resize');
 
