@@ -30,7 +30,7 @@
     return this;
   };
   Node.prototype.find = function(selector) {
-    var nodes = document.querySelectorAll(selector);
+    var nodes = this.querySelectorAll(selector);
     return nodes.length === 1 ? nodes[0] : nodes;
   };
 
