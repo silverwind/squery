@@ -1,4 +1,5 @@
-# squery [![](https://img.shields.io/npm/v/squery.svg)](https://www.npmjs.org/package/squery) [![](http://img.shields.io/david/silverwind/squery.svg)](https://david-dm.org/silverwind/squery) [![](http://img.shields.io/npm/dm/squery.svg)](https://www.npmjs.org/package/squery)
+# squery
+[![](https://img.shields.io/npm/v/squery.svg?style=flat)](https://www.npmjs.org/package/squery) [![](https://img.shields.io/npm/dm/squery.svg)](https://www.npmjs.org/package/squery) [![](https://api.travis-ci.org/silverwind/squery.svg?style=flat)](https://travis-ci.org/silverwind/squery)
 > Yet another jQuery "replacement"
 
 `squery` is based on the awesome [bling.js](https://gist.github.com/paulirish/12fb951a8b893a454b32) and brings the following extensions:
