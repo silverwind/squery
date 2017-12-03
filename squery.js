@@ -1,4 +1,5 @@
 /*! squery | (c) silverwind | BSD license */
+/* eslint-disable no-var */
 
 (function() {
   "use strict";
