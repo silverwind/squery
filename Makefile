@@ -4,7 +4,7 @@ lint:
 
 min:
 	node_modules/.bin/uglifyjs squery.js -o squery.min.js --mangle --compress --unsafe --comments '/squery/' && wc -c squery.min.js
-	cat README.md | sed -E "s/([0-9]+) bytes/$$(gzip-size squery.min.js) bytes/g" > README.md
+	cat README.md | sed -E "s/([0-9]+) bytes/$$(node_modules/.bin/gzip-size --raw squery.min.js) bytes/g" > README.md
 
 update:
 	node_modules/.bin/updates -u
