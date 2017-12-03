@@ -1,10 +1,15 @@
 
 lint:
-	eslint --color --quiet --ignore-pattern *.min.js .
+	node_modules/.bin/eslint --color --quiet --ignore-pattern *.min.js .
 
 min:
-	uglifyjs squery.js -o squery.min.js --mangle --compress --screw-ie8 --unsafe --comments '/squery/' && wc -c squery.min.js
+	node_modules/.bin/uglifyjs squery.js -o squery.min.js --mangle --compress --unsafe --comments '/squery/' && wc -c squery.min.js
 	cat README.md | sed -E "s/([0-9]+) bytes/$$(gzip-size squery.min.js) bytes/g" > README.md
+
+update:
+	node_modules/.bin/updates -u
+	rm -rf node_modules
+	yarn
 
 publish:
 	npm publish
@@ -28,4 +33,4 @@ major:
 	npm version major
 	$(MAKE) publish
 
-.PHONY: lint min publish patch minor major
+.PHONY: lint min update publish patch minor major
