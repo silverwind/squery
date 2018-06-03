@@ -1,5 +1,5 @@
 
-lint:
+test:
 	node_modules/.bin/eslint --color --quiet --ignore-pattern *.min.js .
 
 min:
@@ -18,21 +18,21 @@ publish:
 	git push --follow-tags
 
 patch:
-	$(MAKE) lint
+	$(MAKE) test
 	$(MAKE) min
 	npm version patch
 	$(MAKE) publish
 
 minor:
-	$(MAKE) lint
+	$(MAKE) test
 	$(MAKE) min
 	npm version minor
 	$(MAKE) publish
 
 major:
-	$(MAKE) lint
+	$(MAKE) test
 	$(MAKE) min
 	npm version major
 	$(MAKE) publish
 
-.PHONY: lint min update publish patch minor major
+.PHONY: test min update publish patch minor major
